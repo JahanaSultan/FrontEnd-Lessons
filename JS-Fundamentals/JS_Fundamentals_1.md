@@ -18,7 +18,7 @@ Javascript dünyanın ən populyar proqramlaşdırma dillərindən biridir. Java
 
 Javascript 1995-ci ildə Brendan Eich tərəfindən yaradılmışdır. Javascript-in adı Java ilə heç bir əlaqəsi yoxdur. Javascript-in adı Java ilə yanaşıldığı üçün, insanlar Javascript-i Java ilə eyni proqramlaşdırma dili kimi düşünür. Lakin, Javascript-in Java ilə heç bir əlaqəsi yoxdur. Javascript-in adı Java ilə yanaşıldığı üçün, Javascript-in adı ECMAScript olaraq dəyişdirilmişdir. Javascript-in əsas versiyaları ECMAScript 3, ECMAScript 5, ECMAScript 6, ECMAScript 7, ECMAScript 8, ECMAScript 9, ECMAScript 10, ECMAScript 11, ECMAScript 12-dir.
 
-## JS file necə yaradılır?
+## Javascript file necə yaradılır?
 
 Javascript fayllarını `.js` uzantılı fayllar ilə yarada bilərik. Məsələn, `script.js` adlı bir fayl yaradaq. Faylın adı istədiyiniz ola bilər. Faylın adını yaratdıqdan sonra, bu faylı HTML faylına əlavə edərək, Javascript kodlarını burada yazaraq, səhifədə olan elementlərə müdaxilə edə bilərik.
 Htmldə script faylını əlavə etmək üçün aşağıdakı kodu yazmaq kifayətdir:
@@ -29,7 +29,7 @@ Htmldə script faylını əlavə etmək üçün aşağıdakı kodu yazmaq kifay�
 
 Bu kodu yazdıqdan sonra, `script.js` faylında olan Javascript kodları səhifədə işləyəcək.
 
-## JS də dataları göstərmək
+## Javascript də dataları göstərmək
 
 Javascript-də dataları göstərmək üçün 4 əsas metoddan istifadə edə bilərik. Bunlar:
 
@@ -61,7 +61,7 @@ console.log("Salam, Javascript!");
 document.write("Salam, Javascript!");
 ```
 
-## JS şərh yazmaq
+## Javascript şərh yazmaq
 
 Javascript-də şərh yazmaq üçün `//` və ya `/* */` işarələrindən istifadə edə bilərik. Məsələn, aşağıdakı kodda, `//` işarəsi ilə şərh yazılmışdır:
 
@@ -75,7 +75,7 @@ Javascript-də şərh yazmaq üçün `//` və ya `/* */` işarələrindən istif
 
 Qısayol: `Ctrl + /`, `Ctrl + ?` (windows) və ya `Cmd + /`, `Cmd + ?`(mac) düymələrinə eyni anda basaraq, seçdiyiniz kodları şərhə çevirə bilərsiniz. Eyni zamanda `Ctrl + /` (windows) və ya `Cmd + /` (mac) düymələrinə eyni anda basaraq, şərhə çevrilmiş kodları normallaşdıra bilərsiniz.
 
-## JS dəyişənlər
+## Javascript dəyişənlər
 
 Js-də dəyişənlər, məlumatları saxlamaq üçün istifadə olunur. Dəyişənlərə məlumatları saxlamaq üçün `var`, `let` və ya `const` açar sözlərindən istifadə edə bilərik. Bu açar sözlərini bir növ elan edici şəxs olaraq düşünə bilərsiniz. Yəni js də program və dəyişkəni bir biri ilə tanış edən vasitəçi rolunu oynayır. Dəyişənlərə məlumatları saxlamaq üçün aşağıdakı sintaksisi istifadə edə bilərik:
 
@@ -113,7 +113,7 @@ Bu kodda, `const` açar sözü ilə mənimsədilmiş dəyişəninə başqa məlu
 `var` açar sözü 1995 - 2015-ci illərdə istifadə olunurdu. Lakin, 2015-ci ildə ECMAScript 6 ilə birlikdə `let` və `const` açar sözləri də əlavə olundu. Bu açar sözlər `var` açar sözündən daha təhlükəsizdir. Bu açar sözləri istifadə etmək daha məsləhətdir.
 
 
-## JS operatorlar
+## Javascript operatorlar
 
 Js-də operatorlar, dəyişənlər arasında riyazi əməliyyatlar etmək üçün istifadə olunur. Operatorlar, dəyişənlər arasında toplama, çıxma, vurma, bölmə və s. əməliyyatlar etmək üçün istifadə olunur. Js-də əsas operatorlar aşağıdakılardır:
 
@@ -209,7 +209,7 @@ console.log(c); // Javascript
 ```
 
 
-## JS təyin operatorları
+## Javascript təyin operatorları
 
 Js-də təyin operatorları, dəyişənlərə məlumat mənimsətmək üçün istifadə olunur. Js-də əsas təyin operatorları aşağıdakılardır:
 
@@ -273,7 +273,7 @@ a **= 3; // a = a ** 3
 console.log(a); // 8
 ```
 
-## JS müqayisə operatorları
+## Javascript müqayisə operatorları
 
 Js-də müqayisə operatorları, dəyişənlər arasında müqayisə etmək üçün istifadə olunur. Js-də əsas müqayisə operatorları aşağıdakılardır:
 
@@ -286,7 +286,7 @@ var b = 5;
 console.log(a == b); // true
 ```
 
-JS də tək bərabərlik işarəsi `=` təyin operatorudur. Bərabərlik operatoru isə `==` işarəsidir. Yəni birincisi dəyişənə məlumat mənimsətmək üçün, ikincisi isə dəyişənlərin bərabər olub-olmadığını yoxlamaq üçündür.
+Javascript də tək bərabərlik işarəsi `=` təyin operatorudur. Bərabərlik operatoru isə `==` işarəsidir. Yəni birincisi dəyişənə məlumat mənimsətmək üçün, ikincisi isə dəyişənlərin bərabər olub-olmadığını yoxlamaq üçündür.
 
 2. **Bərabərlikdən fərqli operatoru (!=)**: Dəyişənlərin bərabər olmadığını yoxlamaq üçün istifadə olunur. Məsələn, a dəyişəninin dəyəri `5`-ə bərabər deyilsə, `true` cavabını göstərəcək:
 
@@ -351,7 +351,7 @@ var b = 10;
 console.log(b >= a); // true
 ```
 
-## JS məntiqi operatorlar
+## Javascript məntiqi operatorlar
 
 Js-də məntiqi operatorlar, dəyişənlər arasında məntiqi əməliyyatlar etmək üçün istifadə olunur. Js-də əsas məntiqi operatorlar aşağıdakılardır:
 
@@ -381,7 +381,7 @@ var a = true;
 console.log(!a); // false
 ```
 
-## JS binary (ikili) sistem nədir?
+## Javascript binary (ikili) sistem nədir?
 
 İkili sistem ədədləri 0 və 1 simvolları ilə ifadə edən ədədlər sistemidir. İkili sistem, kompüterlərin əsas ədədlər sistemidir. İkili sistemdə, ədədlər 2 simvoldan istifadə edərək ifadə olunur. Ədədlər 0 və 1 simvolları ilə ifadə olunur. Məsələn ikili sistemdə, 0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001 və s. Bunlar onluq sistemdə 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ədədlərinə bərabərdir.
 
@@ -421,7 +421,7 @@ Burada `parseInt()` funksiyası istifadə olunur. İlk parametr olaraq ikili sis
 4. **Javascript-də məntiqi operatorlar**: Məntiqi operatorlar ilə dəyişənləri müqayisə edin.
 5. **Javascript-də ikili sistem**: İkili sistemdəki ədədləri onluq sistemə çevirin. (5, 10, 200, 350, 400)
 6. **Javascript-də ikili sistem**: Onluq sistemdəki ədədləri ikili sistemə çevirin. (101, 1001, 1100, 1110, 10000)
-7. **JS də dataları göstərmək**: Javascript-də `alert()`, `console.log()`, `document.write()`, `innerHTML` metodlarından istifadə edərək, məlumatları göstərin.
-8. **JS də şərh yazmaq**: Javascript-də şərh yazmaq üçün `//` və ya `/* */` işarələrindən istifadə edin.
-9. **JS də JS file necə yaradılır**: Javascript fayllarını `.js` uzantılı fayllar ilə yaradın və HTML faylına əlavə edin.
-10. **JS dəyişənlər**: Javascript-də dəyişənlər yaradın və məlumat mənimsədin.
+7. **Javascript də dataları göstərmək**: Javascript-də `alert()`, `console.log()`, `document.write()`, `innerHTML` metodlarından istifadə edərək, məlumatları göstərin.
+8. **Javascript də şərh yazmaq**: Javascript-də şərh yazmaq üçün `//` və ya `/* */` işarələrindən istifadə edin.
+9. **Javascript file necə yaradılır**: Javascript fayllarını `.js` uzantılı fayllar ilə yaradın və HTML faylına əlavə edin.
+10. **Javascript dəyişənlər**: Javascript-də dəyişənlər yaradın və məlumat mənimsədin.
