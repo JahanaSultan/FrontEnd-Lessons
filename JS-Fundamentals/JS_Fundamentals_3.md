@@ -1,7 +1,7 @@
 # Javascript Dərs 3
 
 
-## 4. Number Metodları (Number Methods)
+##  Number Metodları (Number Methods)
 
 Number tipli dəyişənlər üzərində aşağıdakı fərqli metodlar tətbiq edilə bilər:
 
@@ -27,7 +27,7 @@ let num = 5.12345;
 console.log(num.toPrecision(2)); // "5.1"
 ```
 
-4. `parseInt()`: Stringi onluq ədədə çevirir.
+4. `parseInt()`: Stringi tam ədədə çevirir.
 
 ```javascript
 let num = "5";
@@ -41,11 +41,17 @@ let num = "5.12345";
 console.log(parseFloat(num)); // 5.12345
 ```
 
-6. `isNaN()`: Numberin `NaN` olub-olmadığını yoxlayır. `NaN` (Not a Number) ədəd olmayan bir dəyəri ifadə edir. 
+6. `isNaN()`: Numberin `NaN` olub-olmadığını yoxlayır. `NaN` (Not a Number) ədəd olmayan bir dəyəri ifadə edir. Əgər dəyişkən string halında olsa belə ədədə çevrilə bilməyəcək bir dəyərə malikdirsə, `NaN` olaraq qəbul edilir və `isNaN()` funksiyası `true` qaytarır. Əks halda `false` qaytarır. 
 
 ```javascript
 let num = 5;
 console.log(isNaN(num)); // false
+
+num = "5";
+console.log(isNaN(num)); // false
+
+num = "Hello";
+console.log(isNaN(num)); // true
 ```
 
 7. `isFinite()`: Numberin `Infinity` və ya `-Infinity` olub-olmadığını yoxlayır.
@@ -84,7 +90,7 @@ console.log(num.valueOf()); // 5
 ```
 
 
-## 5. Boolean Metodları (Boolean Methods)
+##  Boolean Metodları (Boolean Methods)
 
 Boolean tipli dəyişənlər üzərində aşağıdakı fərqli metodlar tətbiq edilə bilər:
 
@@ -103,190 +109,138 @@ console.log(isStudent.valueOf()); // true
 ```
 
 
-## 6. Array Metodları (Array Methods)
+## Şərt İfadələri (Conditional Statements)
 
-Array tipli dəyişənlər üzərində aşağıdakı fərqli metodlar tətbiq edilə bilər:
+Şərt ifadələri, proqramın müxtəlif şərtlərə uyğun olaraq fərqli əməliyyatlar yerinə yetirməsini təmin edir. JavaScript-də ən çox istifadə olunan şərt ifadələri aşağıdakılardır:
 
-1. `length`: Arrayin uzunluğunu qaytarır.
+1. `if` şərti: Əgər şərt doğru olarsa, şərtin icra olunacağı blok işlənir.
 
 ```javascript
-let arr = [1, 2, 3];
-console.log(arr.length); // 3
+let isStudent = true;
+
+if (isStudent) {
+    console.log("You are a student.");
+}
 ```
 
-2. `push()`: Arrayin sonuna yeni element əlavə edir.
+2. `if...else` şərti: Əgər şərt doğru olarsa, `if` bloku işlənir. Əks halda isə `else` bloku işlənir.
 
 ```javascript
-let arr = [1, 2, 3];
-arr.push(4);
-console.log(arr); // [1, 2, 3, 4]
+
+let isStudent = false;
+
+if (isStudent) {
+    console.log("You are a student.");
+} else {
+    console.log("You are not a student.");
+}
 ```
 
-3. `pop()`: Arrayin sonundan element silir.
+3. `if...else if...else` şərti: Əgər bir neçə şərti yoxlamaq lazımdırsa, `if...else if...else` şərti istifadə olunur.
 
 ```javascript
-let arr = [1, 2, 3];
-arr.pop();
-console.log(arr); // [1, 2]
+
+let isStudent = false;
+
+if (isStudent) {
+    console.log("You are a student.");
+} else if (!isStudent) {
+    console.log("You are not a student.");
+} else {
+    console.log("You are not a student.");
+}
 ```
 
-4. `shift()`: Arrayin əvvəlindən element silir.
+4. `switch` şərti: `switch` şərti, bir neçə eyni dəyəri yoxlamaq üçün istifadə olunur. Bu şərt, `case` blokları ilə təyin olunur. Əgər heç bir `case` bloku doğru olmazsa, `default` bloku işlənir. Bu şərtdən sonra `break` ifadəsi yazılmalıdır. Əks halda, növbəti `case` bloku da işlənəcək. Bu, istifadəçiyə səhv nəticələr göstərə bilər. Çox az hallarda istifadə olunur.
 
 ```javascript
-let arr = [1, 2, 3];
-arr.shift();
-console.log(arr); // [2, 3]
+
+let day = "Monday";
+
+switch (day) {
+    case "Monday":
+        console.log("Today is Monday.");
+        break;
+    case "Tuesday":
+        console.log("Today is Tuesday.");
+        break;
+    case "Wednesday":
+        console.log("Today is Wednesday.");
+        break;
+    case "Thursday":
+        console.log("Today is Thursday.");
+        break;
+    case "Friday":
+        console.log("Today is Friday.");
+        break;
+    case "Saturday":
+        console.log("Today is Saturday.");
+        break;
+    case "Sunday":
+        console.log("Today is Sunday.");
+        break;
+    default:
+        console.log("Invalid day.");
+}
 ```
 
-5. `unshift()`: Arrayin əvvəlinə yeni element əlavə edir.
+
+##  Dövr Operatorları (Loop Statements)
+
+Dövr operatorları, müxtəlif şərtlərə uyğun olaraq eyni əməliyyatı təkrar təkrar yerinə yetirmək üçün istifadə olunur. Javascriptdə kodlar normalda yuxarıdan aşağı işlənir. Dövr operatorları, kodun müəyyən bir hissəsini təkrar təkrar işlədərək proqramın nəzərdə tutulan məqsədə çatmasını təmin edir. JavaScript-də ən çox istifadə olunan dövr operatorları aşağıdakılardır:
+
+1. `for` dövrü: `for` dövrü, müəyyən bir şərtə uyğun olaraq bir bloku təkrar təkrar işləmək üçün istifadə olunur.
 
 ```javascript
-let arr = [1, 2, 3];
-arr.unshift(0);
-console.log(arr); // [0, 1, 2, 3]
-``` 
 
-6. `concat()`: Arrayləri birləşdirir.
-
-```javascript
-let arr1 = [1, 2];
-let arr2 = [3, 4];
-let arr3 = arr1.concat(arr2);
-console.log(arr3); // [1, 2, 3, 4]
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
 ```
 
-7. `join()`: Arrayi stringə çevirir.
+2. `while` dövrü: `while` dövrü, bir şərt doğru olduğu müddətdə bir bloku təkrar təkrar işləmək üçün istifadə olunur.
 
 ```javascript
-let arr = [1, 2, 3];
-console.log(arr.join()); // "1,2,3"
+
+let i = 0;
+
+while (i < 5) {
+    console.log(i);
+    i++;
+}
 ```
 
-8. `reverse()`: Arrayin elementlərini tərsinə çevirir.
+3. `do-while`: `do-while` dövr operatoru, ən az bir dəfə icra olunacaq əməliyyatları icra etmək üçün istifadə olunur. Dövrün icra edilip edilmədiyi, dövrün sonunda şərtin doğru olub olmamasına əsaslanır.Məsələn:
 
 ```javascript
-let arr = [1, 2, 3];
-arr.reverse();
-console.log(arr); // [3, 2, 1]
+
+let i = 0;
+
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
 ```
 
-9. `slice()`: Arrayin verilmiş indeksləri arasındakı elementləri qaytarır. İlk indeks daxil, ikinci indeks daxil deyil. İkinci indeks verilməsə, arrayin sonuna qədər olan elementləri qaytarır.
 
-```javascript
-let arr = [1, 2, 3, 4, 5];
-console.log(arr.slice(1, 3)); // [2, 3]
-```
+# Dərs 3 Tapşırıqlar
 
-10. `splice()`: Arraydən verilmiş indeksdən başlayaraq verilmiş sayda element silir və ya əlavə edir.
-
-```javascript
-let arr = [1, 2, 3, 4, 5];
-arr.splice(1, 2);
-console.log(arr); // [1, 4, 5]
-```
-
-11. `sort()`: Arrayi artan sıra ilə sıralayır.
-
-```javascript
-let arr = [3, 1, 2];
-arr.sort();
-console.log(arr); // [1, 2, 3]
-```
-
-Lakin, `sort()` metodu yalnız stringləri düzgün sıralayır. Əgər rəqəmləri düzgün sıralamaq istəyirsinizsə, sort metodu içində funksiya yazmalısınız. Məsələn:
-
-```javascript
-let arr = [3, 1, 2];
-arr.sort((a, b) => a - b);
-console.log(arr); // [1, 2, 3]
-```
-
-Əgər rəqəmləri azdan çoxa sıralamaq istəyirsinizsə, funksiyanın yerinə `-` işarəsini əvəz edin. Məsələn:
-
-```javascript
-let arr = [3, 1, 2];
-arr.sort((a, b) => b - a);
-console.log(arr); // [3, 2, 1]
-```
-
-12. `indexOf()`: Arraydə verilmiş elementin indeksini qaytarır. Əgər element tapılmazsa `-1` qaytarır. Birdən çox eyni element varsa, ilk tapılanın indeksini qaytarır.
-
-```javascript
-let arr = [1, 2, 3];
-console.log(arr.indexOf(2)); // 1
-```
-
-13. `lastIndexOf()`: Arraydə verilmiş elementin sonuncu indeksini qaytarır. Əgər element tapılmazsa `-1` qaytarır. Birdən çox eyni element varsa, sonuncu tapılanın indeksini qaytarır.
-
-```javascript
-let arr = [1, 2, 3, 2];
-console.log(arr.lastIndexOf(2)); // 3
-```
-
-14. `includes()`: Arraydə verilmiş elementin olub-olmadığını yoxlayır.
-
-```javascript
-let arr = [1, 2, 3];
-console.log(arr.includes(2)); // true
-```
-
-15. `every()`: Arrayin bütün elementləri üçün verilmiş şərti yoxlayır. Əgər bütün elementlər şərti ödəyirsə `true`, əks halda `false` qaytarır.
-
-```javascript
-let arr = [1, 2, 3];
-console.log(arr.every((element) => element > 0)); // true
-```
-
-16. `some()`: Arrayin hər hansı bir elementi üçün verilmiş şərti yoxlayır. Əgər hər hansı bir element şərti ödəyirsə `true`, əks halda `false` qaytarır.
-
-```javascript
-let arr = [1, 2, 3];
-console.log(arr.some((element) => element > 2)); // true
-```
-
-17. `filter()`: Arraydə verilmiş şərtə uyğun elementləri qaytarır. Yeni array yaradır və şərtə uyğun olan elementləri bu arrayə əlavə edir.
-
-```javascript
-let arr = [1, 2, 3];
-let newArr = arr.filter((element) => element > 1);
-console.log(newArr); // [2, 3]
-```
-
-18. `map()`: Arraydə verilmiş funksiyanı hər bir elementə tətbiq edir. Yeni array yaradır və funksiyanın qaytardığı dəyərləri bu arrayə əlavə edir.
-
-```javascript
-let arr = [1, 2, 3];
-let newArr = arr.map((element) => element * 2);
-console.log(newArr); // [2, 4, 6]
-```
-
-19. `reduce()`: Arraydə verilmiş funksiyanı elementlərə tətbiq edir və bir dəyər qaytarır. Məsələn, elementləri toplamaq üçün `reduce()` metodu istifadə olunur.
-
-```javascript
-let arr = [1, 2, 3];
-let sum = arr.reduce((total, element) => total + element, 0);
-console.log(sum); // 6
-```
-
-20. `find()`: Arraydə verilmiş şərtə uyğun ilk elementi qaytarır. Əgər element tapılmazsa `undefined` qaytarır. Yalnız bir element qaytarır.
-
-```javascript
-let arr = [1, 2, 3];
-let element = arr.find((element) => element > 1);
-console.log(element); // 2
-```
-
-21. `findIndex()`: Arraydə verilmiş şərtə uyğun ilk elementin indeksini qaytarır. Əgər element tapılmazsa `-1` qaytarır. Yalnız bir elementin indeksini qaytarır.
-
-```javascript
-let arr = [1, 2, 3];
-let index = arr.findIndex((element) => element > 1);
-console.log(index); // 1
-```
-
-22. `forEach()`: Arrayin hər bir elementinə verilmiş funksiyanı tətbiq edir. Yeni array yaratmır.
-
-```javascript
-let arr = [1, 2, 3];
-arr.forEach((element) => console.log(element));
-```
+1. Ədədin mənfi və ya müsbət olduğunu yoxlayan proqram yazın.
+2. İstifadəçinin yaşına görə, istifadəçinin yaşının 18-dən böyük olub-olmadığını yoxlayan proqram yazın.
+3. İstifadəçinin yaşına görə, istifadəçinin yaşının 18-dən böyük olduğu halda, istifadəçinin sürücülük vəsiqəsinin olub-olmadığını yoxlayan proqram yazın.
+4. Ədədin cüt və ya tək olduğunu yoxlayan proqram yazın.
+5. FizzBuzz oyunu yazın. (Əgər ədəd 3-ə və 5-ə bölünürsə, "FizzBuzz" çap edin. Əgər ədəd 3-ə bölünürsə, "Fizz" çap edin. Əgər ədəd 5-ə bölünürsə, "Buzz" çap edin. Əks halda, ədədi çap edin.)
+6. İstifadəçinin daxil etdiyi ədədin faktorialını hesablayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+7. İstifadəçinin daxil etdiyi iki ədədin ƏBOB və ƏKOB-nu hesablayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+8. İstifadəçinin daxil etdiyi iki ədəd arasındakı ədədlərdən cüt olanları çap edən proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+9. İstifadəçinin daxil etdiyi cümlədə müəyyən bir sözün olub-olmadığını yoxlayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+10. İstifadəçinin daxil etdiyi cümlədəki sözlərin sayını hesablayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+11. İstifadəçinin daxil etdiyi cümlədəki hərflərin sayını hesablayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+12. İstifadəçidən password yazmasını tələb edin və password-da ən azı bir böyük hərf, bir kiçik hərf, bir rəqəm və bir simvol olub-olmadığını yoxlayan proqram yazın. Əgər bu şərtlər ödənmirsə yeni bir şifrə yazması üçün program nəyin əksik olduğunu bildirib yenidən şifrə yazmağı tələb etsin. Əks halda 
+"Şifrə qəbul edildi yazılsın" (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+13. İstifadəçinin daxil etdiyi ədədin rəqəmlərinin cəmini hesablayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+14. İstifadəçinin daxil etdiyi ədədin rəqəmlərinin hasilini hesablayan proqram yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+15. Prompt dan daxil edilmiş tələbənin qiymətini yoxlayın. 90 və yuxarı olarsa "A", 80 və yuxarı olarsa "B", 70 və yuxarı olarsa "C", 60 və yuxarı olarsa "D", əks halda "F" yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+16. Bilet qiymətini daxil edən istifadəçidən yaşını daxil etməsini tələb edin. Əgər yaş 65-dən böyük və ya 12-dən kiçikdirsə, biletin qiyməti 7 dollar olmalıdır. Əks halda biletin qiyməti 12 dollar olmalıdır. Biletin qiymətini çap edin. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+17. Məhsulun qiymətinə görə tətbiq olanan endirim faizini hesablayan proqram yazın. Əgər məhsulun qiyməti 1000 dollar və yuxarıdırsa, endirim faizi 10% olmalıdır. Əks halda endirim faizi 5% olmalıdır. Endirim faizini və endirimli qiyməti çap edin. (prompt() funksiyası ilə istifadəçidən məlumat alın.)
+18. Bədən çəki indeksini hesablayan proqram yazın. İstifadəçidən çəkisini və boyunu soruş. Hesablanma qaydası: çəki / boy**2 (boy 160 çəki 60 dırsa 60 / 1.6 * 1.6)  Bədən çəki indeksi 18.5-dən kiçikdirsə, "Aşağıdır", 18.5-dən böyükdür və 24.9-dan kiçikdirsə, "Normaldır", 24.9-dan böyükdür və 29.9-dan kiçikdirsə, "Çox çoxdur", 29.9-dan böyükdürsə, "Obezdir" yazın. (prompt() funksiyası ilə istifadəçidən məlumat alın.)

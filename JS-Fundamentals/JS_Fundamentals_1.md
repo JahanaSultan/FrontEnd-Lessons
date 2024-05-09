@@ -112,6 +112,51 @@ Bu kodda, `const` açar sözü ilə mənimsədilmiş dəyişəninə başqa məlu
 
 `var` açar sözü 1995 - 2015-ci illərdə istifadə olunurdu. Lakin, 2015-ci ildə ECMAScript 6 ilə birlikdə `let` və `const` açar sözləri də əlavə olundu. Bu açar sözlər `var` açar sözündən daha təhlükəsizdir. Bu açar sözləri istifadə etmək daha məsləhətdir.
 
+Dəyişənlərin adlandırılmasında bir neçə qayda var:
+
+1. Dəyişənlər hər zaman kiçik hərflərlə yazılır.
+2. Birdən çox söz olan dəyişənlər _ işarələri ilə yazılır. Məsələn, `ad_soyad`.
+3. Dəyişənlər rəqəmlə başlaya bilməz.
+4. Dəyişənlər özel simvollar ilə başlaya bilməz.
+5. Dəyişənlərin adında boşluq olmaz.
+6. Dəyişənlər təkrar olmamalıdır.
+
+Dəyişənlərin adlandırılmasında istifadə edilməməsi gərəkən adlar aşağıdakılardır:
+
+1. `break`
+2. `case`
+3. `catch`
+4. `class`
+5. `const`
+6. `continue`
+7. `debugger`
+8. `default`
+9. `delete`
+10. `do`
+11. `else`
+12. `export`
+13. `extends`
+14. `finally`
+15. `for`
+16. `function`
+17. `if`
+18. `import`
+19. `in`
+20. `instanceof`
+21. `new`
+22. `return`
+23. `super`
+24. `switch`
+25. `this`
+26. `throw`
+27. `try`
+28. `typeof`
+29. `var`
+30. `void`
+31. `while`
+32. `with`
+33. `yield`
+
 
 ## Javascript operatorlar
 
