@@ -273,7 +273,44 @@ let text = "Hello";
 console.log(text.at(1)); // "e"
 ```
 
-## 3. String Şablonları (String Templates)
+21. `match()` : Bu metod vasitəsi ilə verilmiş stringdə verilmiş regex-i axtarır və uyğunluqları array şəklində qaytarır. Əgər uyğunluq tapılmazsa `null` qaytarır.
+  
+  ```javascript
+  let text = "Hello";
+  console.log(text.match("l")); // ["l", "l"]
+  ```
+
+22. `search()` : Bu metod bir string içərisində bir ifadəni (regex) axtarır. 
+  Əgər taparsa, tapdığı indeksi qaytarır. Əgər tapmazsa `-1` qaytarır.
+  
+  ```javascript
+  let text = "Hello";
+  console.log(text.search("l")); // 2
+
+  let text2 ="Mən javascripti sevirəm"
+  console.log(text2.search("javascript")); // 4
+  console.log(text2.search(/Javascript/gi)) // 4 (Burada g və i regex in iki flag(bayrağını) təmsil edir. g - Global axtarış bayrağıdır. Bu bayraq, uyğunlaşma tapılsada stringin hamısında axtarmağa davam edir. i - Böyük / kiçik hərf həssaslığının olmamasını bildirir. Yəni axtarılan sözün böyük və ya kiçik hərflərlə yazılmasından asılı olmayaraq tapılmasını təmin edir.)
+  ```
+
+## 3. Dəyişənlərin tiplərini yoxlama
+
+Dəyişənlərin tiplərini yoxlamaq üçün `typeof` operatorundan istifadə olunur. Məsələn:
+
+```javascript
+let name = "John";
+let age = 25;
+let isStudent = true;
+let job;
+
+console.log(typeof name); // "string"
+console.log(typeof age); // "number"
+console.log(typeof isStudent); // "boolean"
+console.log(typeof job); // "undefined"
+console.log(typeof NaN) // number
+console.log(typeof null) // object
+```
+
+## 4. String Şablonları (String Templates)
 
 String şablonları, stringləri birləşdirmək üçün daha rahat bir yol təqdim edir. String şablonları `${}` işarələri arasında dəyişənləri və ya ifadələri yazmağa imkan verir. Məsələn:
 

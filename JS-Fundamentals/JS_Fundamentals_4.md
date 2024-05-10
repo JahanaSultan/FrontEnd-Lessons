@@ -1,6 +1,11 @@
 # Javascript Dərs 4
 
 
+## Funksialar (Functions)
+
+
+
+
 ## Array Metodları (Array Methods)
 
 Array tipli dəyişənlər üzərində aşağıdakı fərqli metodlar tətbiq edilə bilər:
