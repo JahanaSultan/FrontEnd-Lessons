@@ -184,6 +184,36 @@ switch (day) {
 }
 ```
 
+5. Ternary operatorları, `if...else` şərt ifadələrinin qısa formalarıdır. Ternary operatorları, üç əsas hissədən ibarətdir: şərt, şərtin doğru olması halında icra olunacaq əməliyyat və şərtin yanlış olması halında icra olunacaq əməliyyat. Ternary operatorları aşağıdakı kimi yazılır:
+
+```javascript
+
+let isStudent = true;
+
+let message = isStudent ? "You are a student." : "You are not a student.";
+
+console.log(message);
+```
+
+və ya sadəcə `true` halında icra olunması gərəkən və `else` şərti olmadan:
+
+```javascript
+
+let isStudent = true;
+
+isStudent && console.log("You are a student.");
+```
+
+6. `nullish coalescing` operatoru: `nullish coalescing` operatoru, `null` və ya `undefined` dəyərlərini yoxlamaq üçün istifadə olunur. Əgər dəyişkən `null` və ya `undefined` dəyərindən başqa bir dəyərə malikdirsə, bu dəyəri qaytarır. Əks halda, ikinci dəyəri qaytarır.
+
+```javascript
+
+let name = "John";
+let message = name ?? "Guest";
+
+console.log(message); // "John"
+```
+
 
 ##  Dövr Operatorları (Loop Statements)
 
@@ -220,6 +250,32 @@ do {
     console.log(i);
     i++;
 } while (i < 5);
+```
+
+`break` və `continue` ifadələri:
+
+1. `break` ifadəsi: `break` ifadəsi, dövrü dayandırmaq üçün istifadə olunur.
+
+```javascript
+
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        break;
+    }
+    console.log(i);
+} // 0, 1, 2
+```
+
+2. `continue` ifadəsi: `continue` ifadəsi, dövrün növbəti addımına keçmək üçün istifadə olunur.
+
+```javascript
+
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i);
+}// 0, 1, 2, 4
 ```
 
 

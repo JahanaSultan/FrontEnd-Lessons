@@ -3,6 +3,106 @@
 
 ## Funksialar (Functions)
 
+Funksiya, müəyyən bir tapşırığı yerinə yetirmək üçün hazırlanmış yenidən istifadə edilə bilən kod bloku və ya proqramlaşdırma ifadələridir. Funksiya, funksiya açar sözü ilə təyin olunur və ardınca ad, sonra da mötərizələr `()` gəlir. Mötərizələrin içində funksiyaya bir parametr ötürə bilərik. Funksiya kodu:
+
+- Təmiz və oxunaqlı edir
+- Yenidən istifadə edilə bilər
+- Test etmək asandır
+
+Funksiya bir neçə yolla təyin edilə bilər:
+
+- Declaration function
+- Expression function
+- Anonymous function
+- Arrow function
+
+Funksialar, aşağıdakı sintaksis ilə təyin olunur:
+
+```javascript
+function funksiyaAdı(parametr1, parametr2, ...) {
+    // Funksiya daxilində icra olunacaq əməliyyatlar
+    return dəyər;
+}
+
+// Funksiya çağırılır
+funksiyaAdı(arg1, arg2, ...);
+```
+
+Funksiyalar parametr qəbul etmədən və dəyər qaytarmadan da yaradıla bilər:
+
+```javascript
+function funksiyaAdı() {
+    // Funksiya daxilində icra olunacaq əməliyyatlar
+    console.log("Funksiyanı işə saldınız")
+}
+
+// Funksiya çağırılır
+funksiyaAdı(); // "Funksiyanı işə saldınız"
+```
+
+Anonim funksiyalar (Anonymous function): Bu funksiyalar adı olmayan funksiyalardır. Çox zaman funksiya ifadələri və ya callback funksiyalar olaraq istifadə olunurlar
+
+```javascript
+let funksiyaAdı = function(parametr1, parametr2, ...) {
+    // Funksiya daxilində icra olunacaq əməliyyatlar
+    return dəyər;
+}
+
+// Funksiya çağırılır
+funksiyaAdı(arg1, arg2, ...);
+```
+
+Arrow funksiyalar: Arrow funksiyalar, ES6 ilə daxil olmuşdur. Arrow funksiyalar, funksiya ifadələrini qısaltmaq üçün istifadə olunur.
+
+```javascript
+let funksiyaAdı = (parametr1, parametr2, ...) => {
+    // Funksiya daxilində icra olunacaq əməliyyatlar
+    return dəyər;
+}
+
+// Funksiya çağırılır
+funksiyaAdı(arg1, arg2, ...);
+```
+
+Expression funksiyalar : Bu tip funksiyalar bir dəyişkənə mənimsədilir. Bu funksiyaları ancaq özündən aşağıdakı sətirlərdə istifadə etmək mümkündür:
+
+```javascript
+let funksiyaAdı = function(parametr1, parametr2, ...) {
+    // Funksiya daxilində icra olunacaq əməliyyatlar
+    return dəyər;
+}
+
+// Funksiya çağırılır
+funksiyaAdı(arg1, arg2, ...);
+```
+
+Declaration funksiyalar: Bu tip funksiyalar yazıldığı sətirdən üst sətirlərdə də çağırıla bilərlər və bu xüsusiyyətə `hoisting` deyilir:
+
+```javascript
+// Funksiya təyin olunur
+function funksiyaAdı(parametr1, parametr2, ...) {
+    // Funksiya daxilində icra olunacaq əməliyyatlar
+    return dəyər;
+}
+
+// Funksiya çağırılır
+funksiyaAdı(arg1, arg2, ...);
+```
+
+Funksiyaların parametr qəbul etməsi və dəyər qaytarması məcbur deyil. Funksiya parametr qəbul etməsə, mötərizələr içində heç bir şey yazılmır. Funksiya dəyər qaytarmırsa, `return` ifadəsi istifadə etmək məcbur deyil. Funksiya dəyər qaytarmırsa, `undefined` dəyərini qaytarır.
+
+Funsiyalarda parametrlərə default dəyər vermək mümkündür:
+
+```javascript
+function greetings(istifadeciAdi = "Istifadeci") {
+    let salamlama = `Xos geldin ${istifadeciAdi}`
+    return salamlama;
+}
+
+console.log(greetings()); // "Xos geldin Istifadeci"
+console.log(greetings("Gunes")); // "Xos geldin Gunes"
+```
+
 
 
 
