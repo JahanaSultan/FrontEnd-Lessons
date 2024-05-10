@@ -105,8 +105,38 @@ console.log(greetings("Gunes")); // "Xos geldin Gunes"
 
 
 
-
 ## Array Metodları (Array Methods)
+
+Dəyişənlərdən fərqli olaraq, Array birdən çox dəyəri saxlaya bilər. Hər bir dəyərin Arraydə indeksi var və hər bir indeksin bir yaddaş ünvanı var. Hər bir dəyər indeksləri istifadə edərək əldə edilə bilər. Arrayin indeksi sıfırdan başlayır və son elementin indeksi arrayin uzunluğundan bir azdır.
+
+Array, düzgün sıralanmış və dəyişdirilə bilən fərqli data tiplərinin bir qrupudur. Array, eyni elementləri və fərqli data tiplərini saxlamağa imkan verir. Array boş ola bilər və ya fərqli data tipi dəyərlərə malik ola bilər.
+
+JavaScript-də Array yaratmaq üçün fərqli yollar mövcuddur. Array dəyişənini təyin etmək üçün `let` əvəzinə `const` istifadə etmək çox yaygındır. Əgər `const` istifadə edirsinizsə, bu dəyişən adını daha sonra istifadə etməyəcəyinizi göstərir.
+
+- `Array()` konstruktor vasitəsi ilə:
+
+```javascript
+let arr = new Array();
+```
+
+- `[]` köşəli mötərizələr vasitəsi ilə:
+
+```javascript
+let arr = [];
+```
+
+- Elementlərlə birlikdə:
+
+```javascript
+let arr = [1, 2, 3];
+```
+
+Arrayin elementlərinə müraciət etmək üçün indeksləri istifadə edirik. Indekslər sıfırdan başlayır. Məsələn, birinci elementə müraciət etmək üçün indeks 0-dır.
+
+```javascript
+const arr = [1, 2, 3];
+console.log(arr[0]); // 1
+```
 
 Array tipli dəyişənlər üzərində aşağıdakı fərqli metodlar tətbiq edilə bilər:
 
@@ -293,3 +323,85 @@ console.log(index); // 1
 let arr = [1, 2, 3];
 arr.forEach((element) => console.log(element));
 ```
+
+23. `flat()`: Arraydə verilmiş dərəcədə olan arrayləri düz arrayə çevirir.
+
+```javascript
+let arr = [1, [2, 3], 4];
+let newArr = arr.flat();
+console.log(newArr); // [1, 2, 3, 4]
+```
+
+24. `flatMap()`: Arraydə verilmiş dərəcədə olan arrayləri düz arrayə çevirir və verilmiş funksiyanı hər bir elementə tətbiq edir.
+
+```javascript
+let arr = [1, [2, 3], 4];
+let newArr = arr.flatMap((element) => element * 2);
+console.log(newArr); // [2, 4, 6, 8]
+```
+
+25. `from()`: Arraydən yeni array yaradır.
+
+```javascript
+let arr = [1, 2, 3];
+let newArr = Array.from(arr);
+console.log(newArr); // [1, 2, 3]
+```
+
+26. `isArray()`: Verilmiş dəyərin array olub-olmadığını yoxlayır.
+
+```javascript
+let arr = [1, 2, 3];
+console.log(Array.isArray(arr)); // true
+```
+
+27. `keys()`: Arrayin indekslərini qaytarır.
+
+```javascript
+
+let arr = [1, 2, 3];
+let keys = arr.keys();
+for (let key of keys) {
+    console.log(key); // 0, 1, 2
+}
+```
+
+28. `values()`: Arrayin dəyərlərini qaytarır.
+
+```javascript
+
+let arr = [1, 2, 3];
+let values = arr.values();
+for (let value of values) {
+    console.log(value); // 1, 2, 3
+}
+```
+
+29. `entries()`: Arrayin indekslərini və dəyərlərini qaytarır.
+
+```javascript
+let arr = [1, 2, 3];
+let entries = arr.entries();
+for (let entry of entries) {
+    console.log(entry); // [0, 1], [1, 2], [2, 3]
+}
+```
+
+30. `fill()`: Arrayin verilmiş indekslərini verilmiş dəyərlərlə doldurur.
+
+```javascript
+let arr = [1, 2, 3];
+arr.fill(0, 1, 2);
+console.log(arr); // [1, 0, 3]
+```
+
+31. `copyWithin()`: Arrayin verilmiş indekslərini verilmiş indeksə kopyalayır.
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3, 4);
+console.log(arr); // [4, 2, 3, 4, 5]
+```
+
+
+# Dərs 4 Tapşırıqlar
