@@ -89,6 +89,23 @@ let isStudent = true;
 let isTeacher = false;
 ```
 
+Hər zaman `true` olan dəyərlər (truthy values):
+
+1. 0 dan başqa bütün pozitiv və neqativ rəqəmlər.
+2. `""` bo. stringd'n başqa bütün stringlər.
+3. Bütün obyektlər.
+4. `true` dəyəri.
+5. `Infinity` dəyəri.
+
+Hər zaman `false` olan dəyərlər (falsy values):
+
+1. 0
+2. `NaN`.
+3. `null`.
+4. `undefined`.
+5. `false`.
+6. `''` (boş string).
+
 ### 1.5. Undefined
 
 Undefined, dəyişənin dəyərinin təyin edilmədiyini ifadə edir. Məsələn:
@@ -294,7 +311,7 @@ console.log(text.at(1)); // "e"
 
 ## 3. Dəyişənlərin tiplərini yoxlama
 
-Dəyişənlərin tiplərini yoxlamaq üçün `typeof` operatorundan istifadə olunur. Məsələn:
+Dəyişənlərin tiplərini yoxlamaq üçün `typeof` metodundan istifadə olunur. Məsələn:
 
 ```javascript
 let name = "John";
