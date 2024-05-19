@@ -1,4 +1,4 @@
-# Javascript Dərs 4
+# Javascript Dərs 5
 
 ## Obyektlər(Objects)
 
