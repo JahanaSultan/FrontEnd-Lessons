@@ -146,3 +146,95 @@ HTML formatlama elementləri, səhifədəki mətni formatlamaq üçün istifadə
 - `<hr>`: Qısa xətt əlavə edir.
 - `<mark>`: Mətni işarələyir.
 - `<del>`: Mətni silinmiş kimi göstərir.
+
+## HTML şərh sətrləri
+
+HTML şərh sətrləri, mətnin açıqlamasını və ya izahını əlavə etmək üçün istifadə olunur. HTML şərh sətrləri, brauzer tərəfindən oxunmur və yalnız mətn redaktoru tərəfindən görünür. HTML şərh sətrləri, `<!--` və `-->` işarələri arasında yazılır:
+
+```html
+<!-- Bu bir HTML şərh sətridir -->
+```
+
+HTML şərh sətrləri, mətn redaktoru tərəfindən kodun başqa proqramçılar tərəfindən daha asan anlaşılması üçün istifadə olunur. HTML şərh sətrləri, kodun hansı hissəsinin nə işlə yaradığını izah etmək üçün istifadə olunur. Kodu şərh sətrinə çevirmək üçün `Ctrl + /` kombinasiyasını vuraraq seçdiyiniz kodu şərh sətrinə çevirə bilərsiniz.
+
+## HTML linkləri
+
+HTML linkləri, səhifələr arasında keçidləri təyin etmək üçün istifadə olunur. HTML linkləri, `<a>` etiketi ilə təyin olunur və `href` atributu ilə hədəf səhifənin URL adresi təyin olunur. HTML linkləri, mətn və ya şəkil kimi elementlərə əlavə oluna bilər:
+
+```html
+<a href="https://www.example.com">Mətn linki</a>
+<a href="https://www.example.com"><img src="image.jpg" alt="Description" /></a>
+```
+
+HTML linkləri, mətn və ya şəkil kimi elementlərə əlavə oluna bilər. Linklərə basdıqda hədəf səhifə açılır və istifadəçi hədəf səhifəyə yönləndirilir. Linklərə basdıqda hədəf səhifə yeni pəncərədə açılmasını istəyirsinizsə, `target="_blank"` atributunu əlavə edə bilərsiniz. Attributları aşağıdakılardır:
+
+- `href`: Linkin hədəf səhifəsinin URL adresini təyin edir.
+- `target`: Linkin açılacağı hədəf pencəsini təyin edir.
+- `download`: Şəklin yüklənməsinə icazə verir.
+- `rel`: Linkin məzmunu ilə bağlı məlumat verir.
+
+## HTML şəkilləri
+
+HTML şəkilləri, səhifədə şəkilləri və ya digər media fayllarını göstərmək üçün istifadə olunur. HTML şəkilləri, `<img>` etiketi ilə təyin olunur və `src` atributu ilə şəklin URL adresi təyin olunur. HTML şəkilləri, mətn və ya link kimi elementlərə əlavə oluna bilər:
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+`img` elementinin ən vacib atributları aşağıdakılardır:
+
+- `src`: Şəklin URL adresini təyin edir.
+- `alt`: Şəklin alternativ məzmununu təyin edir.
+- `width`: Şəklin genişliyini təyin edir.
+- `height`: Şəklin hündürlüyünü təyin edir.
+- `title`: Şəklin başlığını təyin edir.
+
+## HTML siyahıları
+
+HTML siyahıları, məlumatları qruplaşdırmaq və təşkil etmək üçün istifadə olunur. HTML siyahıları, `<ul>`, `<ol>` və `<li>` etiketləri ilə təyin olunur. HTML siyahıları, mətn, link və ya şəkil kimi elementlərə əlavə oluna bilər:
+
+```html
+<ul>
+	<li>Element 1</li>
+	<li>Element 2</li>
+	<li>Element 3</li>
+</ul>
+
+<ol>
+	<li>Element 1</li>
+	<li>Element 2</li>
+	<li>Element 3</li>
+</ol>
+
+<ul>
+	<li><a href="https://www.example.com">Link 1</a></li>
+	<li><a href="https://www.example.com">Link 2</a></li>
+	<li><a href="https://www.example.com">Link 3</a></li>
+</ul>
+
+<ul>
+	<li><img src="image1.jpg" alt="Description" /></li>
+	<li><img src="image2.jpg" alt="Description" /></li>
+	<li><img src="image3.jpg" alt="Description" /></li>
+</ul>
+```
+
+HTML siyahıları, məlumatları qruplaşdırmaq və təşkil etmək üçün istifadə olunur. Siyahılar, mətn, link və ya şəkil kimi elementlərə əlavə oluna bilər. Siyahılar, `<ul>`, `<ol>` və `<li>` etiketləri ilə təyin olunur. `<ul>` etiketi, sırasız siyahıları təyin edir və `<ol>` etiketi, sıralı siyahıları təyin edir. `<li>` etiketi, siyahı elementlərini təyin edir.
+
+## HTML video və audio
+
+HTML video və audio elementləri, səhifədə video və səs fayllarını göstərmək üçün istifadə olunur. HTML video və audio elementləri, `<video>` və `<audio>` etiketləri ilə təyin olunur və `src` atributu ilə faylın URL adresi təyin olunur:
+
+```html
+<video src="video.mp4" controls></video>
+<audio src="audio.mp3" controls></audio>
+```
+
+`video` və `audio` elementlərinin ən vacib atributları aşağıdakılardır:
+
+- `src`: Video və səs faylının URL adresini təyin edir.
+- `controls`: Video və səs faylının naviqasiya düymələrini göstərir.
+- `autoplay`: Video və səs faylını avtomatik başladar.
+- `loop`: Video və səs faylını təkrar edir.
+- `muted`: Video və səs faylının səsini söndərir.
+- `preload`: Video və səs faylını yükləmək üçün təyin edir.
