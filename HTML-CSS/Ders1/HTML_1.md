@@ -220,21 +220,3 @@ HTML siyahıları, məlumatları qruplaşdırmaq və təşkil etmək üçün ist
 ```
 
 HTML siyahıları, məlumatları qruplaşdırmaq və təşkil etmək üçün istifadə olunur. Siyahılar, mətn, link və ya şəkil kimi elementlərə əlavə oluna bilər. Siyahılar, `<ul>`, `<ol>` və `<li>` etiketləri ilə təyin olunur. `<ul>` etiketi, sırasız siyahıları təyin edir və `<ol>` etiketi, sıralı siyahıları təyin edir. `<li>` etiketi, siyahı elementlərini təyin edir.
-
-## HTML video və audio
-
-HTML video və audio elementləri, səhifədə video və səs fayllarını göstərmək üçün istifadə olunur. HTML video və audio elementləri, `<video>` və `<audio>` etiketləri ilə təyin olunur və `src` atributu ilə faylın URL adresi təyin olunur:
-
-```html
-<video src="video.mp4" controls></video>
-<audio src="audio.mp3" controls></audio>
-```
-
-`video` və `audio` elementlərinin ən vacib atributları aşağıdakılardır:
-
-- `src`: Video və səs faylının URL adresini təyin edir.
-- `controls`: Video və səs faylının naviqasiya düymələrini göstərir.
-- `autoplay`: Video və səs faylını avtomatik başladar.
-- `loop`: Video və səs faylını təkrar edir.
-- `muted`: Video və səs faylının səsini söndərir.
-- `preload`: Video və səs faylını yükləmək üçün təyin edir.
