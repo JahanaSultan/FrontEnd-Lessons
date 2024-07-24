@@ -376,14 +376,6 @@ Font Awesome saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Fo
 
 Ionicons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Ionicons](https://ionicons.com/)
 
-### Material Icons
-
-Material Icons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Material Icons](https://material.io/resources/icons/)
-
-### Boxicons
-
-Boxicons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Boxicons](https://boxicons.com/)
-
 ### Remix Icon
 
 Remix Icon saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Remix Icon](https://remixicon.com/)
