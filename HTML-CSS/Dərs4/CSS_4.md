@@ -396,25 +396,9 @@ Feather Icons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [F
 
 Heroicons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Heroicons](https://heroicons.com/)
 
-### Zondicons
-
-Zondicons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Zondicons](http://www.zondicons.com/)
-
 ### Tabler Icons
 
 Tabler Icons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Tabler Icons](https://tablericons.com/)
-
-### Line Awesome
-
-Line Awesome saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Line Awesome](https://icons8.com/line-awesome)
-
-### Eva Icons
-
-Eva Icons saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Eva Icons](https://akveo.github.io/eva-icons/)
-
-### Ikonate
-
-Ikonate saytından istənilən ikonu seçib istifadə edə bilərsiniz. [Ikonate](https://ikonate.com/)
 
 ## Links
 
