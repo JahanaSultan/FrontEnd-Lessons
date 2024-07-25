@@ -511,41 +511,6 @@ body {
 }
 ```
 
-### background-origin
-
-Background-origin atributu, elementin arxa fon şəklinin başlanğıcını təyin edir. 
-
-1. padding-box - Şəkil padding bölməsindən başlayacaq.
-2. border-box - Şəkil border bölməsindən başlayacaq.
-3. content-box - Şəkil məzmun bölməsindən başlayacaq.
-4. initial - Şəkil default olaraq başlayacaq.
-
-Background-origin atributu aşağıdakı kimi yazılır:
-
-```css
-body {
-  background-origin: content-box;
-}
-```
-
-### background-clip
-
-Background-clip atributu, elementin arxa fon şəklinin məzmununu təyin edir. 
-
-1. border-box - Şəkil border bölməsindən başlayacaq.
-2. padding-box - Şəkil padding bölməsindən başlayacaq.
-3. content-box - Şəkil məzmun bölməsindən başlayacaq.
-4. initial - Şəkil default olaraq başlayacaq.
-
-Background-clip atributu aşağıdakı kimi yazılır:
-
-```css
-
-body {
-  background-clip: padding-box;
-}
-```
-
 ### background-shorthand
 
 Background-shorthand atributu, elementin arxa fon atributlarını qısa formada təyin edir. Background-shorthand atributu aşağıdakı kimi yazılır:

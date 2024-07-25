@@ -29,7 +29,6 @@ Mətnin üzərindəki süslemələri tənzimləmək üçün istifadə olunur.
 2. `underline` - Mətnin altını xəttlə çəkir.
 3. `overline` - Mətnin üstünü xəttlə çəkir.
 4. `line-through` - Mətnin ortasından xəttlə çəkir.
-5. `blink` - Mətni süzgəc ilə işıqlandırır.
 
 Aşağıdakı şəkildə yazılır:
 
@@ -216,22 +215,6 @@ p {
 }
 ```
 
-### overflow-wrap
-
-Mətnin sətirin sonuna çatdıqda nə olacağını tənzimləmək üçün istifadə olunur.
-
-1. `normal` - Söz sətirin sonuna çatdıqda qırılmır.
-2. `break-word` - Söz sətirin sonuna çatdıqda qırılır.
-3. `anywhere` - Söz sətirin sonuna çatdıqda qırılmır.
-4. `initial` - Standart dəyər.
-
-Aşağıdakı şəkildə yazılır:
-
-```css
-p {
-  overflow-wrap: break-word;
-}
-```
 
 ### text-align-last
 
@@ -281,7 +264,6 @@ Mətnin stili tənzimləmək üçün istifadə olunur.
 
 1. `normal` - Standart dəyər.
 2. `italic` - Mətni italik görünür.
-3. `oblique` - Mətni oblik görünür.
 
 Aşağıdakı şəkildə yazılır:
 
@@ -321,29 +303,6 @@ Aşağıdakı şəkildə yazılır:
 ```css
 p {
   font-variant: small-caps;
-}
-```
-
-### font-stretch
-
-Mətnin genişliyini tənzimləmək üçün istifadə olunur və `font-family` xüsusiyyəti ilə birlikdə istifadə olunur.
-
-1. `normal` - Standart dəyər.
-2. `ultra-condensed` - Mətnin genişliyi çox kiçikdir.
-3. `extra-condensed` - Mətnin genişliyi kiçikdir.
-4. `condensed` - Mətnin genişliyi kiçikdir.
-5. `semi-condensed` - Mətnin genişliyi kiçikdir.
-6. `semi-expanded` - Mətnin genişliyi böyükdür.
-7. `expanded` - Mətnin genişliyi böyükdür.
-8. `extra-expanded` - Mətnin genişliyi böyükdür.
-9. `ultra-expanded` - Mətnin genişliyi çox böyükdür.
-
-Aşağıdakı şəkildə yazılır:
-
-```css
-p {
-  font-family: Arial, sans-serif;
-  font-stretch: ultra-expanded;
 }
 ```
 

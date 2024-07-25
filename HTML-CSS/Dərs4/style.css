@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFF5EA;
+  font-family: "LibreBaskerville-Regular";
+}
+
+@font-face {
+  font-family: "LibreBaskerville-Bold";
+  src: url("./fonts/LibreBaskerville-Bold.ttf");
+}
+@font-face {
+  font-family: "LibreBaskerville-Italic";
+  src: url("./fonts/LibreBaskerville-Italic.ttf");
+}
+@font-face {
+  font-family: "LibreBaskerville-Regular";
+  src: url("./fonts/LibreBaskerville-Regular.ttf");
+}
+
+body{
+  background-image: url("https://images.unsplash.com/photo-1643712662909-29fe8f02b613?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+.container{
+  text-align: center;
+  padding: 0 100px;
+}
+
+.my-2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-box img{
+  width: 600px;
+  height: 400px;
+
+}
+
+.share i{
+  font-size: 20px;
+  margin: 10px;
+}
+
+.share span{
+  font-size: 20px;
+  color: blue;
+}
+
+.author img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff8400;
+}
+
+.content{
+  text-align: left;
+}
+
+a{
+  color: #ff8400;
+  text-decoration: none;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td{
+  border: 1px solid #ff8400;
+}
+
+th, td{
+  padding: 10px;
+  text-align: center;
+}
+
+th{
+  background-color: #ff8400;
+}
+
+td{
+  background-color: #FFF5EA;
+  color: #ff8400;
+}
