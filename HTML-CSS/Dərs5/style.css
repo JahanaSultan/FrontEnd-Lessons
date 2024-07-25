@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins";
+  color:rgb(35, 35, 35)
+}
+
+nav {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+nav .logo img {
+  width: 110px;
+}
