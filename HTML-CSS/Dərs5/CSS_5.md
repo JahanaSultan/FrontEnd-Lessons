@@ -441,3 +441,7 @@ img {
 ```
 
 Bu kodda, `object-fit: cover;` xüsusiyyəti img elementinin ölçüsünü dəyişdirmədən elementi ölçüsünə uyğunlaşdırır və elementin hər iki küncündən boşluq yaranmır.
+
+# Tapşırıq
+
+1. [https://eco-nature.cmsmasters.net/](https://eco-nature.cmsmasters.net/) saytının Header hissəsini yığın.
