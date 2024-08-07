@@ -1,0 +1,52 @@
+@import url("./style.css");
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .div{
+  width: 50px;
+  height: 50px;
+  background-color: #f1c40f;
+  border-radius: 100vmax;
+  animation: hereket 1s infinite linear;
+  margin: -20px;
+}
+@keyframes hereket {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(72deg);
+  }
+
+  40% {
+    transform: rotate(144deg);
+  }
+
+  60% {
+    transform: rotate(216deg);
+  }
+
+  80% {
+    transform: rotate(288deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 250px;
+  height: 250px;
+  background-color: #f1c40f;
+  border-radius: 100vmax;
+  animation-name: hereket;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}

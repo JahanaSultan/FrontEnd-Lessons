@@ -9,29 +9,29 @@ Pseudo-class-lar, `:` işarəsi ilə işarələnir və elementin durumuna görə
 
 Pseudo-class-ların nümunələri:
 
-- `:hover` - Elementə mouse ilə hover edildikdə
-- `:active` - Elementə click edildikdə
-- `:focus` - Elementə focus olunduqda
-- `:first-child` - Elementin ilk child-ı olduğu zaman
-- `:last-child` - Elementin son child-ı olduğu zaman
-- `:nth-child()` - Elementin n-ci child-ı olduğu zaman
-- `:nth-last-child()` - Elementin sonuncu n-ci child-ı olduğu zaman
-- `:nth-of-type()` - Elementin n-ci tip child-ı olduğu zaman
-- `:nth-last-of-type()` - Elementin sonuncu n-ci tip child-ı olduğu zaman
-- `:not()` - Elementin seçilməməsi üçün
-- `:checked` - Checkbox və radio button-ların seçilmiş olduğu zaman
-- `:disabled` - Elementin disabled olduğu zaman
-- `:enabled` - Elementin enabled olduğu zaman
-- `:empty` - Elementin boş olduğu zaman
-- `:target` - URL-dəki anchor linklərə click edildikdə
+- `:hover` - Elementə mouse ilə hover edildikdə ++++
+- `:active` - Elementə click edildikdə ++++
+- `:focus` - Elementə focus olunduqda ++++
+- `:first-child` - Elementin ilk child-ı olduğu zaman  ++++
+- `:last-child` - Elementin son child-ı olduğu zaman ++++
+- `:nth-child()` - Elementin n-ci child-ı olduğu zaman  ++++
+- `:nth-last-child()` - Elementin sonuncu n-ci child-ı olduğu zaman ++++
+- `:nth-of-type()` - Elementin n-ci tip child-ı olduğu zaman ++++
+- `:nth-last-of-type()` - Elementin sonuncu n-ci tip child-ı olduğu zaman ++++
+- `:not()` - Elementin seçilməməsi üçün ++++
+- `:checked` - Checkbox və radio button-ların seçilmiş olduğu zaman ++++
+- `:disabled` - Elementin disabled olduğu zaman ++++
+- `:enabled` - Elementin enabled olduğu zaman ++++
+- `:empty` - Elementin boş olduğu zaman ++++
+- `:target` - URL-dəki anchor linklərə click edildikdə  ++++
 - `:root` - Document-in root elementi olduğu zaman
 - `:lang()` - Elementin dilinə görə seçim edilməsi üçün
-- `:first-of-type` - Elementin ilk tip child-ı olduğu zaman
-- `:last-of-type` - Elementin son tip child-ı olduğu zaman
+- `:first-of-type` - Elementin ilk tip child-ı olduğu zaman ++++
+- `:last-of-type` - Elementin son tip child-ı olduğu zaman ++++
 - `:only-of-type` - Elementin yeganə tip child-ı olduğu zaman
 - `:only-child` - Elementin yeganə child-ı olduğu zaman
-- `:visited` - Linkin ziyarət edildiyi zaman
-- `:required` - Elementin required olduğu zaman
+- `:visited` - Linkin ziyarət edildiyi zaman ++++
+- `:required` - Elementin required olduğu zaman  ++++
 - `:optional` - Elementin optional olduğu zaman
 - `:valid` - Elementin valid olduğu zaman
 - `:invalid` - Elementin invalid olduğu zaman
@@ -51,9 +51,9 @@ Pseudo-class-ların nümunələri:
 - `:future` - Elementin future olduğu zaman
 - `:active-drop-target` - Elementin active drop target olduğu zaman
 - `:valid-drop-target` - Elementin valid drop target olduğu zaman
-- `:is()` - Elementin seçilməsi üçün
-- `:where()` - Elementin seçilməsi üçün
-- `:has()` - Elementin seçilməsi üçün
+- `:is()` - Elementin seçilməsi üçün ++++
+- `:where()` - Elementin seçilməsi üçün ++++
+- `:has()` - Elementin seçilməsi üçün ++++
 
 Nümunə:
 

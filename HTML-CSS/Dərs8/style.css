@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  ;
+}
+
+:root {
+  --primary-color: #f1c40f;
+  --secondary-color: #f39c12;
+  --tertiary-color: #e67e22;
+  --quaternary-color: #d35400;
+  --quinary-color: #e74c3c;
+  --senary-color: #c0392b;
+  --septenary-color: #ecf0f1;
+  --octonary-color: #bdc3c7;
+  --nonary-color: #95a5a6;
+  --denary-color: #7f8c8d;
+}
+
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1573883430697-4c3479aae6b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: left center;
+  background-size: cover;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000067;
+  top: 0;
+  left: 0;
+}
+
+.sticky-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+  background-color: var(--septenary-color);
+  height: 300px;
+  border-radius: 5px 0 0 5px;
+}
+
+.sticky-bar ul {
+  display: flex;
+  position: relative;
+  height: calc(100% / 6);
+}
+
+.sticky-bar ul li:last-child {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  /* transition: 0.5s ease all; */
+  cursor: pointer;
+}
+
+.sticky-bar ul li:last-child:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.sticky-bar ul li:first-child {
+  position: absolute;
+  padding: 10px;
+  width: max-content;
+  right: calc(100% + 15px);
+  top: 50%;
+  background-color: var(--septenary-color);
+  border-radius: 5px;
+  transform: scale(0.5) translateX(100px);
+  visibility: hidden;
+  transition: 0.2s linear all;
+  cursor: pointer;
+}
+
+.sticky-bar ul li:first-child::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--septenary-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: -5px;
+
+}
+
+.sticky-bar ul:hover li:first-child {
+  transform: scale(1) translate(0, -50%);
+  visibility: visible;
+}
