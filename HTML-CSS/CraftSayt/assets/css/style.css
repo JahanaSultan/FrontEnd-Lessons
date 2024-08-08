@@ -120,6 +120,15 @@ ul.line li:not(:last-of-type)::after {
   display: flex;
   align-items: center;
   gap: 15px;
+  position: relative;
+}
+
+.center-nav .left-side::after{
+  content: "Follow us:";
+  position: absolute;
+  font-size: 14px;
+  top: -16px;
+  color: var(--secondary-color);
 }
 
 .center-nav  i{
@@ -130,16 +139,16 @@ ul.line li:not(:last-of-type)::after {
 .center-nav .right-side ul{
   display: flex;
   gap: 50px;
-  position: relative;
 }
 
 .center-nav .right-side ul li{
   display: flex;
   gap: 10px;
+  position: relative;
 }
 
 .center-nav .right-side ul li::after{
-  right: 80px
+  right: -25px!important;
 }
 
 .center-nav .right-side ul li .cart{
