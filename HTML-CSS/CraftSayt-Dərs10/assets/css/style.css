@@ -72,6 +72,8 @@
   pointer-events: none;
   transform: translateY(20px);
   transition: all .3s;
+  background-color: var(--third-color);
+  z-index: 1;
 }
 
 .top-nav .left-side div ul li {
@@ -91,8 +93,12 @@
 
 .top-nav ul.right-side li {
   position: relative;
+}
+
+.top-nav ul.right-side li a{
   transition: all .3s;
   cursor: pointer;
+  color: var(--text-color);
 }
 
 ul.line li:not(:last-of-type)::after {
@@ -104,7 +110,7 @@ ul.line li:not(:last-of-type)::after {
   right: -15px;
 }
 
-.top-nav ul.right-side li:hover {
+.top-nav ul.right-side li a:hover {
   color: var(--primary-color);
 }
 

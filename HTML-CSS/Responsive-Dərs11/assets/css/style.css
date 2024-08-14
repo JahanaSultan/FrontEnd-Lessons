@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --wp--preset--color--black: #000000;
+  --wp--preset--color--cyan-bluish-gray: #abb8c3;
+  --wp--preset--color--white: #ffffff;
+  --wp--preset--color--pale-pink: #f78da7;
+  --wp--preset--color--vivid-red: #cf2e2e;
+  --wp--preset--color--luminous-vivid-orange: #ff6900;
+  --wp--preset--color--luminous-vivid-amber: #fcb900;
+  --wp--preset--color--light-green-cyan: #7bdcb5;
+  --wp--preset--color--vivid-green-cyan: #00d084;
+  --wp--preset--color--pale-cyan-blue: #8ed1fc;
+  --wp--preset--color--vivid-cyan-blue: #0693e3;
+  --wp--preset--color--vivid-purple: #9b51e0;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+header nav .top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  color: var(--wp--preset--color--white);
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+.padding-x {
+  padding-left: 133px;
+  padding-right: 133px;
+}
+
+header nav .icons {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(30, 38, 109);
+  display: flex;
+}
+
+header nav .responsive-nav {
+  display: none;
+}
+
+header .bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+header .bottom-nav .nav-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn{
+  background-color: #00d664;
+  color: var(--wp--preset--color--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 170px;
+  border: 0;
+  font-size: 16px;
+}
+
+/* responsive-design */
+
+@media screen and (max-width: 1200px) {
+  .padding-x {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  nav {
+    background-color: #fff;
+  }
+
+  header nav .top-nav {
+    color: rgb(68, 87, 126);
+  }
+
+  header nav .bottom-nav{
+    flex-wrap: wrap;
+    height: fit-content;
+    background-color: #fff;
+    padding-bottom: 20px;
+  }
+
+  header nav .responsive-nav {
+    display: flex;
+  }
+
+  header nav .bottom-nav .nav-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header nav .bottom-nav .nav-list li{
+    width: 100%;
+  }
+
+  .btn{
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .padding-x {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
